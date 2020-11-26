@@ -2,7 +2,7 @@ import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import  { RootState }  from 'reducers';
 import Counter from 'components/Counter';
-
+import GithubProfile from 'components/GithubProfile';
 
 export default function Main() {
   
@@ -14,6 +14,7 @@ export default function Main() {
   return (
     <div id="wrap">
       <div className="mb-view">
+        <GithubProfile/>
         <Counter count={count} onIncrease={onIncrease} onDecrease={onDecrease}/>
       </div>
     </div>

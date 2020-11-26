@@ -37,8 +37,10 @@ export type GithubProfile = {
 
 export async function getUserProfile(username: string) {
 
+  console.log(username);
   const response = await axios.get<GithubProfile>(
     `https://api.github.com/users/elin-oh`
   );
-  return response.data; 
+  console.log(response);
+  //return response.data; 
 }

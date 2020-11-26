@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import rootReducer from 'reducers';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
+import Thunk from 'redux-thunk';
 import reportWebVitals from './reportWebVitals';
 
 const composeEnhancers = composeWithDevTools({});
